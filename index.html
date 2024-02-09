@@ -25,11 +25,12 @@
     </style>
 </head>
 <body>
-    <audio id="background-music" autoplay loop>
+    <audio autoplay="" loop="" src="./source/Sound Effects  Fireworks.mp3"></audio>
+    <!-- <audio id="background-music" autoplay loop>
         <!-- Provide correct source path here -->
-        <source src="source/Sound Effects  Fireworks.mp3" type="audio/mp3">
+        <!-- <source src="source/Sound Effects  Fireworks.mp3" type="audio/mp3">
         <!-- Your browser does not support the audio element. -->
-    </audio>
+    <!-- </audio> -->
 
     <div>
         <canvas id="canvas"></canvas>
@@ -46,13 +47,13 @@
         
 
         function onLoad() {
-            backgroundMusic = document.getElementById("background-music");
-            // Check if audio is enabled
-            if (backgroundMusic.paused) {
-                backgroundMusic.play().catch(function(error) {
-                    console.log("Autoplay prevented:", error);
-                });
-            }
+            // backgroundMusic = document.getElementById("background-music");
+            // // Check if audio is enabled
+            // if (backgroundMusic.paused) {
+            //     backgroundMusic.play().catch(function(error) {
+            //         console.log("Autoplay prevented:", error);
+            //     });
+            // }
             canvas = document.getElementById("canvas");
             ctx = canvas.getContext("2d");
             resizeCanvas();
