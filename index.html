@@ -22,6 +22,35 @@
             width: 100%;
             height: 100%;
         }
+/* 
+        .image-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 2s ease; /* Thời gian và kiểu chuyển đổi */
+        /* } */
+
+        /* .transparent-image {
+            opacity: 0.5; /* Điều chỉnh độ mờ tại đây */
+            /* width: 100%; */ /* Bỏ dòng này để giữ kích thước gốc của hình ảnh */
+            /* height: auto; */ /* Bỏ dòng này để giữ kích thước gốc của hình ảnh */
+        /* } */
+        /* .fade-in {
+            opacity: 1;
+        }  */
+        .transparent-image {
+            position: absolute;
+            /* top: 65%;
+            left: 27%; */
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            height: 150px;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
@@ -35,6 +64,10 @@
     <div>
         <canvas id="canvas"></canvas>
     </div>
+    <div>
+        <img class="transparent-image" src="source/z5149517196484_662e3e0117a89412df38215cc9f60a0b.jpg" alt="QR">
+    </div>
+
     <script>
         window.addEventListener("resize", resizeCanvas);
         window.addEventListener("DOMContentLoaded", onLoad);
